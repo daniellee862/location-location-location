@@ -85,7 +85,7 @@ describe("updateRemoteStudents function tests", () => {
     const input = [
       { name: "Hypatia", age: 31, location: "burnley" },
       { name: "Ramanujan", age: 22, location: "burnley" },
-      { name: "Dave", age: 9, location: "manchester" },
+      { name: "Dave", age: 9 },
       { name: "Barry", age: 103, location: "burnley" },
       { name: "Bill", age: 24, location: "skipton" },
       { name: "Jackie", age: 56, location: "colne" },
@@ -96,7 +96,7 @@ describe("updateRemoteStudents function tests", () => {
     expect(input).toEqual([
       { name: "Hypatia", age: 31, location: "burnley" },
       { name: "Ramanujan", age: 22, location: "burnley" },
-      { name: "Dave", age: 9, location: "manchester" },
+      { name: "Dave", age: 9 },
       { name: "Barry", age: 103, location: "burnley" },
       { name: "Bill", age: 24, location: "skipton" },
       { name: "Jackie", age: 56, location: "colne" },

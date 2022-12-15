@@ -43,10 +43,11 @@ updateRemoteStudents([
 const updateRemoteStudents = (students) => {
   return students
     ? students.map((student) => {
-        if (student.location === undefined) {
-          student.location = "remote";
+        const newStudent = { ...student };
+        if (newStudent.location === undefined) {
+          newStudent.location = "remote";
         }
-        return student;
+        return newStudent;
       })
     : students;
 };

@@ -1,0 +1,13 @@
+const locationCheckerPrototype = {};
+
+function locationChecker(studentArr) {
+  //INSTANTIATE OBJECT AND BIND PROTOTYPAL METHODS
+  const newChecker = Object.create(locationCheckerPrototype);
+
+  //OBJECT DECORATION
+
+  newchecker.storage = {};
+
+  //RETURN OBJECT
+  return newchecker;
+}
